@@ -1,0 +1,4 @@
+2019-11-25 20:15:30,214 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@351d0846: startup date [Mon Nov 25 20:15:30 CST 2019]; root of context hierarchy
+2019-11-25 20:15:30,306 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-25 20:15:31,336 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-25 20:15:32,079 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]

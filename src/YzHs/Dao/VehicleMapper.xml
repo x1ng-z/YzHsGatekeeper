@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="YzHs.Dao.VehicleMapper">
+  <resultMap id="baseVehicleInfo" type="YzHs.Bean.Vehicle_info">
+    <!--<id column="id" jdbcType="INTEGER" property="id" />-->
+    <result column="vehicle" jdbcType="VARCHAR" property="vehicleno" />
+    <result column="vcardid" jdbcType="VARCHAR" property="cardno" />
+  </resultMap>
+  
+  <select id="find_vehicle_info" parameterType="java.lang.String" resultMap="baseVehicleInfo">
+    select vehicle, vcardid from levm_cardmanage where  fstatusflag='1'  and nvl(dr,0)=0 and  vcardid=#{cardno}
+</select>
+  <!--<sql id="Base_Column_List">-->
+    <!--id, FirmName, parameter, value, date-->
+  <!--</sql>-->
+  <!--<select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from basedata-->
+    <!--where id = #{id,jdbcType=INTEGER}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+    <!--delete from basedata-->
+    <!--where id = #{id,jdbcType=INTEGER}-->
+  <!--</delete>-->
+  <!--<insert id="insert" parameterType="cn.hs.pojo.Basedata">-->
+    <!--insert into basedata (id, FirmName, parameter, -->
+      <!--value, date)-->
+    <!--values (#{id,jdbcType=INTEGER}, #{firmname,jdbcType=VARCHAR}, #{parameter,jdbcType=VARCHAR}, -->
+      <!--#{value,jdbcType=VARCHAR}, #{date,jdbcType=TIMESTAMP})-->
+  <!--</insert>-->
+  <!--<insert id="insertSelective" parameterType="cn.hs.pojo.Basedata">-->
+    <!--insert into basedata-->
+    <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+      <!--<if test="id != null">-->
+        <!--id,-->
+      <!--</if>-->
+      <!--<if test="firmname != null">-->
+        <!--FirmName,-->
+      <!--</if>-->
+      <!--<if test="parameter != null">-->
+        <!--parameter,-->
+      <!--</if>-->
+      <!--<if test="value != null">-->
+        <!--value,-->
+      <!--</if>-->
+      <!--<if test="date != null">-->
+        <!--date,-->
+      <!--</if>-->
+    <!--</trim>-->
+    <!--<trim prefix="values (" suffix=")" suffixOverrides=",">-->
+      <!--<if test="id != null">-->
+        <!--#{id,jdbcType=INTEGER},-->
+      <!--</if>-->
+      <!--<if test="firmname != null">-->
+        <!--#{firmname,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="parameter != null">-->
+        <!--#{parameter,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="value != null">-->
+        <!--#{value,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="date != null">-->
+        <!--#{date,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</trim>-->
+  <!--</insert>-->
+  <!--<update id="updateByPrimaryKeySelective" parameterType="cn.hs.pojo.Basedata">-->
+    <!--update basedata-->
+    <!--<set>-->
+      <!--<if test="firmname != null">-->
+        <!--FirmName = #{firmname,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="parameter != null">-->
+        <!--parameter = #{parameter,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="value != null">-->
+        <!--value = #{value,jdbcType=VARCHAR},-->
+      <!--</if>-->
+      <!--<if test="date != null">-->
+        <!--date = #{date,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+    <!--</set>-->
+    <!--where id = #{id,jdbcType=INTEGER}-->
+  <!--</update>-->
+  <!--<update id="updateByPrimaryKey" parameterType="cn.hs.pojo.Basedata">-->
+    <!--update basedata-->
+    <!--set FirmName = #{firmname,jdbcType=VARCHAR},-->
+      <!--parameter = #{parameter,jdbcType=VARCHAR},-->
+      <!--value = #{value,jdbcType=VARCHAR},-->
+      <!--date = #{date,jdbcType=TIMESTAMP}-->
+    <!--where id = #{id,jdbcType=INTEGER}-->
+  <!--</update>-->
+
+  <!--<insert id="insertBasedata"  parameterType="cn.hs.pojo.Basedata">-->
+    <!--insert into basedata(FirmName, parameter,value)-->
+    <!--values-->
+    <!--<foreach collection="list" item="basedataList" separator="," >-->
+      <!--(#{basedataList.firmname,jdbcType=VARCHAR}, #{basedataList.parameter,jdbcType=VARCHAR},#{basedataList.value,jdbcType=VARCHAR})-->
+    <!--</foreach>-->
+  <!--</insert>-->
+
+  <!--<select id="selectByParameter" parameterType="java.lang.String" resultType="java.lang.String">-->
+    <!--select-->
+    <!--value-->
+    <!--from basedata-->
+    <!--where firmname = #{firmname} and parameter = #{parameter} order by date desc limit 0,1-->
+  <!--</select>-->
+</mapper>

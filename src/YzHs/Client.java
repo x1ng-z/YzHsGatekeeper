@@ -1,5 +1,6 @@
 package YzHs;
 
+import UI.Bulk_ClientUI;
 import YzHs.Bean.Vehicle_info;
 import YzHs.Dao.VehicleMapper;
 import YzHs.StartUp.DealServer;
@@ -35,6 +36,9 @@ public class Client {
         } catch (BeansException e) {
             logger.error(e);
         }
+
+
+        Bulk_ClientUI.show_ClientUI();
 
     }
 }

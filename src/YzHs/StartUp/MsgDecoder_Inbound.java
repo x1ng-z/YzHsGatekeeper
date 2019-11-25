@@ -24,8 +24,6 @@ public class MsgDecoder_Inbound extends ChannelInboundHandlerAdapter {
         super();
     }
     @Autowired
-    public Command command;
-    @Autowired
     public VehicleMapper vehicleMapper;
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
@@ -47,16 +45,13 @@ public class MsgDecoder_Inbound extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        //super.channelRead(ctx, msg);
         ByteBuf wait_for_read = (ByteBuf) msg;
         String getinfo=null;
         getinfo = ByteBufUtil.hexDump(wait_for_read.readBytes(wait_for_read.readableBytes()));
         logger.info(getinfo);
         //ctx.fireChannelRead(msg); test
-        String carno=command.analye(getinfo);
-        if(carno==null){
-            ReferenceCountUtil.release(msg); // (2)
-        }else {
+        String carno=Command.RECEIVE_CARDNO.analye(getinfo);
+        if(carno!=null){
             Vehicle_info vehicle_info =vehicleMapper.find_vehicle_info(carno);
             if(vehicle_info==null){
                 logger.warn("find null vehicle_info");
@@ -64,9 +59,8 @@ public class MsgDecoder_Inbound extends ChannelInboundHandlerAdapter {
             }
             vehicle_info.setTermial(getinfo.substring(8,10));
             ctx.writeAndFlush(vehicle_info);
-            ReferenceCountUtil.release(msg); // (2)
         }
-
+        ReferenceCountUtil.release(msg);
     }
 
     @Override
@@ -83,8 +77,6 @@ public class MsgDecoder_Inbound extends ChannelInboundHandlerAdapter {
 
             InetSocketAddress ipSocket = (InetSocketAddress) ctx.channel().remoteAddress();
             String clientIp = ipSocket.getAddress().getHostAddress();
-
-
             IdleStateEvent stateEvent = (IdleStateEvent) evt;
 
             switch (stateEvent.state()) {
@@ -100,41 +92,7 @@ public class MsgDecoder_Inbound extends ChannelInboundHandlerAdapter {
                 default:
                     break;
             }
-
-
         }
     }
 
-
-    public  void ToClient(Channel channel, byte[] content) {
-        ByteBuf bufff = null;
-        try {
-            bufff = channel.alloc().buffer();
-            bufff.writeBytes(content);
-            channel.writeAndFlush(bufff).addListener(new ChannelFutureListener() {
-                @Override
-                public void operationComplete(ChannelFuture future) throws Exception {
-                    StringBuilder sb = new StringBuilder("");
-
-                    if (future.isSuccess()) {
-                        logger.info(sb.toString() + "回写成功");
-//                       channel.close();
-//                    log.info(sb.toString()+"回写成功"+receiveStr);
-                    } else {
-                        logger.error(sb.toString() + "回写失败");
-//                        channel.close();
-//                    log.error(sb.toString()+"回写失败"+receiveStr);
-                    }
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
-            logger.error("调用通用writeToClient()异常" + e.getMessage());
-//        log.error("调用通用writeToClient()异常：",e);
-        } finally {
-//    bufff.re
-        }
-
-
-    }
 }

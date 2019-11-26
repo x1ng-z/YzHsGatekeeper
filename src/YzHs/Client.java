@@ -1,11 +1,7 @@
 package YzHs;
 
-import UI.Bulk_ClientUI;
-import YzHs.Bean.Vehicle_info;
-import YzHs.Dao.VehicleMapper;
+import YzHs.UI.Bulk_ClientUI;
 import YzHs.StartUp.DealServer;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.springframework.beans.BeansException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -29,6 +25,7 @@ public class Client {
     public static void main(String[] args) {
         ExecutorService service =Executors.newCachedThreadPool();
         ClassPathXmlApplicationContext ctx = getIOC();//new ClassPathXmlApplicationContext("application.xml");
+        ctx.start();
         DealServer server_netty= null;
         try {
             server_netty = (DealServer)ctx.getBean("server_netty");

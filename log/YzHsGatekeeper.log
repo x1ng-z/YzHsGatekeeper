@@ -184,3 +184,64 @@
 2019-11-26 01:32:39,132 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
 2019-11-26 01:32:39,851 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
 2019-11-26 01:32:40,451 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:05:41,948 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:05:41 CST 2019]; root of context hierarchy
+2019-11-26 14:05:42,028 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:05:43,012 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:05:43,583 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:06:24,154 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:06:24 CST 2019]; root of context hierarchy
+2019-11-26 14:06:24,226 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:06:24,855 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:06:25,360 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:06:45,649 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:06:45 CST 2019]; root of context hierarchy
+2019-11-26 14:06:45,709 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:06:46,224 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:06:46,726 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:07:30,926 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:07:30 CST 2019]; root of context hierarchy
+2019-11-26 14:07:30,995 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:07:31,713 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:07:32,340 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:08:12,666 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:08:12 CST 2019]; root of context hierarchy
+2019-11-26 14:08:12,730 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:08:13,250 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:08:13,671 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:08:38,685 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:08:38 CST 2019]; root of context hierarchy
+2019-11-26 14:08:38,745 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:08:39,297 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:08:39,724 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:09:16,389 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:09:16 CST 2019]; root of context hierarchy
+2019-11-26 14:09:16,475 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:09:17,352 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:09:17,831 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:09:45,384 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:09:45 CST 2019]; root of context hierarchy
+2019-11-26 14:09:45,454 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:09:45,997 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:09:46,429 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:16:55,171 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:16:55 CST 2019]; root of context hierarchy
+2019-11-26 14:16:55,230 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:16:55,905 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:16:56,366 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:26:25,287 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:26:25 CST 2019]; root of context hierarchy
+2019-11-26 14:26:25,357 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:26:25,901 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:26:26,323 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:26:48,054 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:26:48 CST 2019]; root of context hierarchy
+2019-11-26 14:26:48,111 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:26:48,664 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:26:49,108 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:26:54,106 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:26:48 CST 2019]; root of context hierarchy
+2019-11-26 14:26:54,106 WARN  [DealServer.destory(48)] - destroy server resources
+2019-11-26 14:26:54,110 INFO  [Bulk_ClientUI$1.windowClosing(325)] - End client
+2019-11-26 14:27:44,158 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:27:44 CST 2019]; root of context hierarchy
+2019-11-26 14:27:44,242 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:27:44,862 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:27:45,385 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:27:55,631 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:27:44 CST 2019]; root of context hierarchy
+2019-11-26 14:27:55,632 WARN  [DealServer.destory(48)] - destroy server resources
+2019-11-26 14:27:55,637 INFO  [Bulk_ClientUI$1.windowClosing(325)] - End client
+2019-11-26 14:37:53,670 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:37:53 CST 2019]; root of context hierarchy
+2019-11-26 14:37:53,725 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2019-11-26 14:37:54,300 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2019-11-26 14:37:54,723 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2019-11-26 14:37:58,199 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:37:53 CST 2019]; root of context hierarchy
+2019-11-26 14:37:58,200 WARN  [DealServer.destory(48)] - destroy server resources
+2019-11-26 14:37:58,204 INFO  [Bulk_ClientUI$1.windowClosing(325)] - End client

@@ -14,7 +14,7 @@ public class Msgencoder_Outbound extends ChannelOutboundHandlerAdapter {
     private org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(Msgencoder_Outbound.class);
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
-        System.out.println(((Vehicle_info)msg).getVehicleno());
+        logger.info(((Vehicle_info)msg).getVehicleno());
         Vehicle_info vehicle_info=(Vehicle_info) msg;
         byte[] tmpSendBuf=Command.SEND_ALLOW.build(vehicle_info);
         ByteBuf buf =ctx.alloc().buffer().writeBytes(tmpSendBuf);

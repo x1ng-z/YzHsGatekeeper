@@ -1,12 +1,10 @@
-package UI;
+package YzHs.UI;
 
 import YzHs.Client;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -31,13 +29,14 @@ public class Bulk_ClientUI {
         logger = Logger.getLogger(Bulk_ClientUI.class);
 
 //        mf.setLocation(300, 100);
+        //mf.setLayout(new FlowLayout(FlowLayout.CENTER,10,5));
 
         mf.setSize(500, 300);
         mf.setTitle("永州进出厂车辆管控系统");
         JPanel pane = new JPanel();
         mf.add(pane);
         pane.setBackground(new Color(6, 119, 203));
-        pane.setBounds(0, 0, 500, 320);
+        pane.setBounds(0, 0, 500, 300);
         pane.setLayout(null);
         mf.setResizable(false);
 
@@ -54,8 +53,8 @@ public class Bulk_ClientUI {
 
 
 
-        JLabel label1 = new JLabel("");
-        label1.setFont(new Font("",Font.CENTER_BASELINE,40));//创建标签
+        JLabel label1 = new JLabel("永州进出厂车辆管控系统",JLabel.CENTER);
+        label1.setFont(new Font("宋体",Font.CENTER_BASELINE,40));//创建标签
         label1.setBounds(0, 0, 500, 300);
         label1.setBackground(new Color(203, 198, 45));
         label1.setVisible(true);
@@ -319,10 +318,11 @@ public class Bulk_ClientUI {
             public void windowClosing(WindowEvent e) {
                 int i = JOptionPane.showConfirmDialog(null, "确定要退出系统吗？", "退出系统", JOptionPane.YES_NO_OPTION);
                 if (i == JOptionPane.YES_OPTION) {
-                    logger.info("End OneCar");
+
                     try {
 
                         Client.getIOC().close();
+                        logger.info("End client");
                     } catch (Exception e1) {
                         logger.error(e1);
                     }

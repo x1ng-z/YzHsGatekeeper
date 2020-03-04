@@ -8,8 +8,8 @@
   </resultMap>
   
   <select id="find_vehicle_info" parameterType="java.lang.String" resultMap="baseVehicleInfo">
-    select vehicle, vcardid from levm_cardmanage where  fstatusflag='1'  and nvl(dr,0)=0 and  vcardid=#{cardno}
-</select>
+    select vehicle, vcardid from levm_cardmanage L left join (SELECT RFIDCARD,ICCARD,CARNUMBER FROM  HS_FIXEDCARDSET_H  where  APPROVESTATUS=-1  and nvl(dr,0)=0 )  H on L.vehicle=H.CARNUMBER where  fstatusflag='1'  and nvl(dr,0)=0 and  vcardid=#{cardno};
+  </select>
   <!--<sql id="Base_Column_List">-->
     <!--id, FirmName, parameter, value, date-->
   <!--</sql>-->

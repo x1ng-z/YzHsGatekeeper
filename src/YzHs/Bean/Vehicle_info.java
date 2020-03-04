@@ -4,6 +4,7 @@ public class Vehicle_info {
     String termial;
     String cardno;
     String vehicleno;
+
     public String getCardno() {
         return cardno;
     }

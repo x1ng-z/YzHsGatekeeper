@@ -34,6 +34,8 @@ public class Client {
             logger.error(e);
         }
 
+        
+
 
         Bulk_ClientUI.show_ClientUI();
 

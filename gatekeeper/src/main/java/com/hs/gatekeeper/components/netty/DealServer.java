@@ -25,6 +25,8 @@ public class DealServer implements Runnable {
                       NettyConfiguration nettyConfiguration) {
         this.nettyServerInitializer = nettyServerInitializer;
         this.port = nettyConfiguration.getPort();
+
+        new Thread(this).start();
     }
 
     @Override

@@ -11,13 +11,13 @@ Class-Path: netty-all-4.1.17.Final.jar log4j-1.2.17.jar mchange-common
  ng-instrument-4.3.18.RELEASE.jar spring-context-support-4.3.18.RELEAS
  E.jar spring-instrument-tomcat-4.3.18.RELEASE.jar spring-context-supp
  ort-4.3.18.RELEASE.jar spring-instrument-tomcat-4.3.18.RELEASE.jar sp
- ring-aspects-4.3.18.RELEASE.jar spring-instrument-4.3.18.RELEASE.jar 
+ ring-aspects-4.3.18.RELEASE.jar spring-instrument-4.3.18.RELEASE.jar
  spring-expression-4.3.18.RELEASE.jar spring-jms-4.3.18.RELEASE.jar sp
  ring-oxm-4.3.18.RELEASE.jar spring-orm-4.3.18.RELEASE.jar spring-mess
- aging-4.3.18.RELEASE.jar commons-logging-1.2.jar aopalliance-1.0.jar 
+ aging-4.3.18.RELEASE.jar commons-logging-1.2.jar aopalliance-1.0.jar
  spring-jdbc-4.3.18.RELEASE.jar spring-tx-4.3.18.RELEASE.jar spring-ao
  p-4.3.18.RELEASE.jar spring-test-4.3.18.RELEASE.jar spring-beans-4.3.
  18.RELEASE.jar spring-context-4.3.18.RELEASE.jar spring-core-4.3.18.R
  ELEASE.jar
-Main-Class: YzHs.Client
+Main-Class: gateway.Client
 

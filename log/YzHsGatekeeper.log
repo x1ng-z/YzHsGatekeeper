@@ -245,3 +245,19 @@
 2019-11-26 14:37:58,199 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@5e265ba4: startup date [Tue Nov 26 14:37:53 CST 2019]; root of context hierarchy
 2019-11-26 14:37:58,200 WARN  [DealServer.destory(48)] - destroy server resources
 2019-11-26 14:37:58,204 INFO  [Bulk_ClientUI$1.windowClosing(325)] - End client
+2022-05-16 15:53:08,214 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15f550a: startup date [Mon May 16 15:53:08 CST 2022]; root of context hierarchy
+2022-05-16 15:53:08,271 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2022-05-16 15:53:08,796 INFO  [AutowiredAnnotationBeanPostProcessor.<init>(155)] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2022-05-16 15:53:09,020 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2022-05-16 15:53:09,585 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2022-05-16 15:53:14,920 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@15f550a: startup date [Mon May 16 15:53:08 CST 2022]; root of context hierarchy
+2022-05-16 15:53:14,921 WARN  [DealServer.destory(48)] - destroy server resources
+2022-05-16 15:53:14,924 INFO  [Bulk_ClientUI$1.windowClosing(325)] - End client
+2022-05-16 16:04:13,486 INFO  [AbstractApplicationContext.prepareRefresh(583)] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15f550a: startup date [Mon May 16 16:04:13 CST 2022]; root of context hierarchy
+2022-05-16 16:04:13,543 INFO  [XmlBeanDefinitionReader.loadBeanDefinitions(317)] - Loading XML bean definitions from class path resource [application.xml]
+2022-05-16 16:04:13,969 INFO  [AutowiredAnnotationBeanPostProcessor.<init>(155)] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2022-05-16 16:04:14,168 INFO  [MLog$1.run(126)] - MLog clients using log4j logging.
+2022-05-16 16:04:14,753 INFO  [C3P0Registry.banner(248)] - Initializing c3p0-0.9.5.4 [built 23-March-2019 23:00:48 -0700; debug? true; trace: 10]
+2022-05-16 16:04:18,177 INFO  [AbstractApplicationContext.doClose(984)] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@15f550a: startup date [Mon May 16 16:04:13 CST 2022]; root of context hierarchy
+2022-05-16 16:04:18,178 WARN  [DealServer.destory(48)] - destroy server resources
+2022-05-16 16:04:18,181 INFO  [Bulk_ClientUI$1.windowClosing(326)] - End client

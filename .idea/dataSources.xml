@@ -11,5 +11,13 @@
         <property name="v$session.program" value="DataGrip" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="Oracle - @192.168.141.3" uuid="33a327d2-6298-428a-9f96-6c487d4278f3">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@192.168.141.3:1521:orcl</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

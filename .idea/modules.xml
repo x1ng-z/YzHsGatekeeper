@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/YzHsGatekeeper.iml" filepath="$PROJECT_DIR$/YzHsGatekeeper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dhcp_netty_10/dhcp_netty_10.iml" filepath="$PROJECT_DIR$/dhcp_netty_10/dhcp_netty_10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatekeeper/gatekeeper.iml" filepath="$PROJECT_DIR$/gatekeeper/gatekeeper.iml" />
     </modules>
   </component>
 </project>

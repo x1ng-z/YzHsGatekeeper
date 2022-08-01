@@ -2,15 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dhcp_netty_10" />
+        <module name="gatekeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dhcp_netty_10" target="1.5" />
+      <module name="dhcp_netty_10" target="1.8" />
+      <module name="gatekeeper" target="1.8" />
+      <module name="GateKeeper" target="1.8" />
+      <module name="wrapper" target="1.8" />
+      <module name="YzHsGatekeeper" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
